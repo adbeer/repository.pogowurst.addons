@@ -3,6 +3,9 @@ import zipfile
 
 import os
 
+import re
+from xml.etree import ElementTree
+
 from addons_xml_generator import Generator
 
 if __name__ == "__main__":
@@ -14,9 +17,13 @@ if __name__ == "__main__":
             target_addon_dir = os.path.join(addon_name)
             target_addon_xml = os.path.join(target_addon_dir, 'addon.xml')
             target_addon_icon = os.path.join(target_addon_dir, 'icon.png')
-            target_addon_zip = os.path.join(target_addon_dir, '{0:s}.zip'.format(addon_name))
 
             if os.path.exists(source_addon_xml):
+                tree = ElementTree.parse(source_addon_xml)
+                doc = tree.getroot()
+                addon_version = doc.attrib['version']
+                target_addon_zip = os.path.join(target_addon_dir, '{0:s}-{1:s}.zip'.format(addon_name, addon_version))
+
                 if not os.path.exists(target_addon_dir):
                     os.mkdir(target_addon_dir)
                 shutil.copy(source_addon_xml, target_addon_xml)
