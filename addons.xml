@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.audio.rhapsody" name="Rhapsody" version="2.0.0-rc.1" provider-name="pogowurst">
+<addon id="plugin.audio.rhapsody" name="Rhapsody" version="2.0.0" provider-name="pogowurst">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.xbmcswift2" version="2.4.0"/>
@@ -13,7 +13,7 @@
         <summary lang="en">Rhapsody music add-on</summary>
         <description lang="en">Listen to over 35 million songs in the Rhapsody music catalog. Manage your music library and playlists in a comfortable way. Use top artists, albums and tracks or radio stations to discover something new. A Rhapsody subscription is required.</description>
         <summary lang="de">Rhapsody Musik Add-On</summary>
-        <description lang="de">Höre mehr als 35 Millionen Songs aus dem Rhapsody Musikkatalog. Verwalte bequem deine Musikbibliothek und Wiedergabelisten. Verwende Top-Künstlern, Alben und Titel oder Radiosender um etwas Neues zu entdecken. Eine kostenpflichtige Rhapsody-Mitgliedschaft wird benötigt.</description>
+        <description lang="de">Höre mehr als 35 Millionen Songs aus dem Rhapsody Musikkatalog. Verwalte bequem deine Musikbibliothek und Wiedergabelisten. Verwende Top-Künstler, Alben und Titel oder Radiosender um etwas Neues zu entdecken. Eine kostenpflichtige Rhapsody-Mitgliedschaft wird benötigt.</description>
         <disclaimer/>
         <language>en de</language>
         <platform>all</platform>
