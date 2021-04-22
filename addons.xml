@@ -1,19 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.audio.rhapsody" name="Rhapsody" version="2.4.1" provider-name="pogowurst">
+<addon id="plugin.audio.rhapsody" name="Rhapsody" version="3.0.0" provider-name="pogowurst">
     <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.xbmcswift2" version="2.4.0"/>
-        <import addon="script.module.requests" version="2.4.3"/>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.xbmcswift2"/>
+        <import addon="script.module.requests"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="addon.py">
         <provides>audio</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary lang="en">Rhapsody music add-on</summary>
-        <description lang="en">Listen to over 35 million songs in the Rhapsody music catalog. Manage your music library and playlists in a comfortable way. Use top artists, albums and tracks or radio stations to discover something new. A Rhapsody subscription is required.</description>
+        <description lang="en">
+            <![CDATA[Listen to over 35 million songs in the Rhapsody music catalog. Manage your music library and playlists in a comfortable way. Use top artists, albums and tracks or radio stations to discover something new. A Rhapsody subscription is required.]]>
+        </description>
         <summary lang="de">Rhapsody Musik Add-On</summary>
-        <description lang="de">Höre mehr als 35 Millionen Songs aus dem Rhapsody Musikkatalog. Verwalte bequem deine Musikbibliothek und Wiedergabelisten. Verwende Top-Künstler, Alben und Titel oder Radiosender um etwas Neues zu entdecken. Eine kostenpflichtige Rhapsody-Mitgliedschaft wird benötigt.</description>
+        <description lang="de">
+            <![CDATA[Höre mehr als 35 Millionen Songs aus dem Rhapsody Musikkatalog. Verwalte bequem deine Musikbibliothek und Wiedergabelisten. Verwende Top-Künstler, Alben und Titel oder Radiosender um etwas Neues zu entdecken. Eine kostenpflichtige Rhapsody-Mitgliedschaft wird benötigt.]]>
+        </description>
+        <news><![CDATA[
+v3.0.0  (2020-04-22)
+- Added support for Kodi v19 Matrix
+
+v2.4.2  (2019-01-02)
+- Added Python 3 compatibility
+
+v2.4.1  (2019-01-01)
+- Fixed quality setting AAC+ 64kBit/s
+
+v2.4.0  (2019-01-01)
+- Added support for API endpoint 2.2 (currently only used for streaming and controlling streaming quality)
+- Added option to select playback quality in plugin configuration
+- Fixed station playback
+        ]]></news>
         <disclaimer/>
         <language>en de</language>
         <platform>all</platform>
@@ -22,6 +41,10 @@
         <website/>
         <email/>
         <source>https://github.com/pogowurst/plugin.audio.rhapsody</source>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
     </extension>
 </addon>
 
