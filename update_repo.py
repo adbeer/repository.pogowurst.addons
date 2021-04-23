@@ -41,7 +41,7 @@ if __name__ == '__main__':
                             else:
                                 arcname = os.path.relpath(filename, os.path.join('..'))
 
-                            if f in [
+                            if root == source_addon_dir and f in [
                                 'addon.py',
                                 'addon.xml',
                                 'changelog.txt',
