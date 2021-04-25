@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.audio.rhapsody" name="Rhapsody" version="3.1.0" provider-name="pogowurst">
+<addon id="plugin.audio.rhapsody" name="Rhapsody" version="3.1.1" provider-name="pogowurst">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.xbmcswift2"/>
@@ -20,6 +20,9 @@
             <![CDATA[Höre mehr als 35 Millionen Songs aus dem Rhapsody Musikkatalog. Verwalte bequem deine Musikbibliothek und Wiedergabelisten. Verwende Top-Künstler, Alben und Titel oder Radiosender um etwas Neues zu entdecken. Eine kostenpflichtige Rhapsody-Mitgliedschaft wird benötigt.]]>
         </description>
         <news><![CDATA[
+v3.1.1  (2020-04-25)
+- Fix errors when playing previous playlist items again
+
 v3.1.0  (2020-04-23)
 - Added DRM support
 - Added MP3 streaming format
